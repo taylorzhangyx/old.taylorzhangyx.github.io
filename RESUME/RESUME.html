@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Yuxin Zhang's resume">
+<meta name="keywords" content="resume, Yuxin Zhang, software engineer, internship, game developing">
+<meta name="author" content="Yuxin Zhang">
+<meta name="author" content="Taylor Zhang">
+<title>RESUME - Yuxin Zhang - KEEP LEARNING AND ENJOY CODING</title>
+<link href="../main/CSS/Global.css" rel="stylesheet" type="text/css">
+<link href="../main/CSS/HTMLReset.css" rel="stylesheet" type="text/css">
+<link href="css/resume.css" rel="stylesheet" type="text/css">
+<script src="../JS/move.js" type="text/javascript"></script>
+
+<script>
+window.onload = function () {
+    
+    projectDisplay(01);
+    projectDisplay(02);
+    projectDisplay(03);
+    projectDisplay(04);
+    projectDisplay(05);
+    projectDisplay(51);
+    projectDisplay(52);
+    projectDisplay(53);
+    projectDisplay(54);
+    projectDisplay(55);
+    navigationSensor();
+}
+
+
+function projectDisplay(projectNum){
+    var project;
+    var projectDetail;
+    switch (projectNum){
+        case 01:
+            project = document.getElementById("project_01");
+            projectDetail = document.getElementById("project_detail_01");
+            break;
+        case 02:
+            project = document.getElementById("project_02");
+            projectDetail = document.getElementById("project_detail_02");
+            break;
+        case 03:
+            project = document.getElementById("project_03");
+            projectDetail = document.getElementById("project_detail_03");
+            break;
+        case 04:
+            project = document.getElementById("project_04");
+            projectDetail = document.getElementById("project_detail_04");
+            break;
+        case 05:
+            project = document.getElementById("project_05");
+            projectDetail = document.getElementById("project_detail_05");
+            break;
+        case 51:
+            project = document.getElementById("project_51");
+            projectDetail = document.getElementById("project_detail_51");
+            break;
+        case 52:
+            project = document.getElementById("project_52");
+            projectDetail = document.getElementById("project_detail_52");
+            break;
+        case 53:
+            project = document.getElementById("project_53");
+            projectDetail = document.getElementById("project_detail_53");
+            break;
+        case 54:
+            project = document.getElementById("project_54");
+            projectDetail = document.getElementById("project_detail_54");
+            break;
+        case 55:
+            project = document.getElementById("project_55");
+            projectDetail = document.getElementById("project_detail_55");
+            break;
+        default:
+            break;
+    }
+    
+    
+    project.onmouseover = function () {
+        projectDetail.style.display = "block";
+        projectDetail.style.top =  "-30px" ;
+        projectDetail.style.right = "-510px";
+        startMove(projectDetail, {opacity : 100});
+    }
+    project.onmouseout = function () {
+        startMove(projectDetail, {opacity: 0}, function() {
+            
+            projectDetail.style.display = "none";
+            
+            });
+    }
+}
+
+function project01SubDetailOver() {
+    var project01DetailSub = document.getElementById("project01DetailSub");
+    var display = project01DetailSub.style.display;
+    if (display == "none"){
+        project01DetailSub.style.display = "block";
+    }
+    else{
+        project01DetailSub.style.display = "none";
+     }
+}
+
+function project03SubDetailOver1() {
+    var project03DetailSub1 = document.getElementById("project03DetailSub1");
+    var display = project03DetailSub1.style.display;
+    if (display == "none"){
+        project03DetailSub1.style.display = "block";
+    }
+    else{
+        project03DetailSub1.style.display = "none";
+     }
+}
+
+function project03SubDetailOver2() {
+    var project03DetailSub2 = document.getElementById("project03DetailSub2");
+    var display = project03DetailSub2.style.display;
+    if (display == "none"){
+        project03DetailSub2.style.display = "block";
+    }
+    else{
+        project03DetailSub2.style.display = "none";
+     }
+}
+
+function navigationSensor() {
+    
+    var wholeBody = document.getElementById("body");
+    var navigationBar = document.getElementById("navigation");
+    
+    wholeBody.onmousemove = function (event){
+        navigationBar.style.opacity  = 1.7 - event.clientY/300 ;
+    }
+    
+}
+
+</script>
+
+
+</head>
+
+<body id="body">
+    <div class="header"></div>
+    <div class="resume width content_background">
+        <div id="navigation" class="navigation">
+            <ul class="navigation_ul float_l">
+            	<a href="http://www.acsu.buffalo.edu/~zhang25/"><li>HOME</li></a>
+            	<a href="RESUME.html"><li>RESUME</li></a>
+            	<a href="../Project/project.html"><li>PROJECT</li></a>
+            	<a href="../messageboard/messageboard.html"><li>MESSAGE BOARD</li></a>
+            </ul>
+        </div>
+        <div class="name"><h1>YUXIN ZHANG</h1></div>
+        <div class="head"><img alt="head" src="../src/head.png"></div>
+        <div class="resume_container">
+            
+            <div class="resume_content_header width float_l"></div>
+            <div class="resume_content_l float_l content_background">
+                <div class="programing_experience">
+                <h2>PROGRAMING EXPERIENCE</h2>
+                <div> <p class="time">Mar. - May 2016</p>
+                    <div class="staticClass">
+                        <div id="project_01">
+                            <h3>Game Master Labyrinth</h3>	
+                            <i>Team Leader</i><br>
+                            Based on <b>JAVA language</b><br>
+                            
+                            <div id="project_detail_01" class="detailInfoDiv">
+                            <img alt="project1" class="project_img" src="src/project1.png">
+                                <ul class="detailInfo">
+                                    <li>GUI Design</li>
+                                    <li class="projectDetailExtend" style="list-style-type:disc" onClick="project01SubDetailOver()">Data Structure Use
+                                        <ul id="project01DetailSub" class="detailInfoSub" style="display:none" >
+                                            <li>Array</li>
+                                            <li>ArrayList</li>
+                                            <li>HashTable</li>
+                                            <li>BST</li>
+                                            <li>Stack</li>
+                                            <li>Queue</li>
+                                        </ul>
+                                    </li>
+                                    <li>Random Tile Initialization</li>
+                                    <li>Deadline Driven Teamwork</li>
+                                    <li>Programming Communication Skills</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div> <p class="time"> May 2016</p>
+                    <div class="staticClass">
+                        <div id="project_02">
+                            <h3>Network Layer Routing Algorithm Implementation</h3>
+                            Based on <b>C language</b><br>
+                            
+                            <div id="project_detail_02" class="detailInfoDiv" style="display:block">
+                                <img alt="project2" class="project_img" src="src/project2.png">
+                                <ul class="detailInfo">
+                                    <li>Establish Forwarding Table</li>
+                                    <li>TCP UDP Communication</li>
+                                    <li>Command Control</li>
+                                    <li>Software Timing Data Update</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div> <p class="time">Mar. 2016</p>
+                    <div class="staticClass">
+                        <div id="project_03">
+                            <h3>A Functional Chatting APP</h3>
+                            Based on <b>C language</b><br>
+                            <div id="project_detail_03" class="detailInfoDiv" style="display:block">
+                            <img alt="project3" class="project_img" src="src/project3.png">
+                                <ul class="detailInfo">
+                                    <li>Application Layer Design</li>
+                                    <li>TCP Connection</li>
+                                    <li class="projectDetailExtend" style="list-style-type:disc" onClick="project03SubDetailOver1()">Client APP functionality
+                                        <ul id="project03DetailSub1" class="detailInfoSub" style="display:none" >
+                                            <li>Login to the server</li>
+                                            <li>Send message to another client</li>
+                                            <li>Send files to another client</li>
+                                            <li>Fetch the statistics from the server</li>
+                                            <li>Hide them self from the other client</li>
+                                            <li>Logout from the server</li>
+                                        </ul>
+                                    </li>
+                                    <li class="projectDetailExtend" style="list-style-type:disc" onClick="project03SubDetailOver2()">Server APP functionality
+                                        <ul id="project03DetailSub2" class="detailInfoSub" style="display:none" >
+                                            <li>Accept login request from clients</li>
+                                            <li>Pass message from one client to another one</li>
+                                            <li>Gather data, such as IP, port number, username, message they sent and the number of messages</li>
+                                            <li>Refresh data when client login or logout</li>
+                                            <li>Mute clients</li>
+                                            <li>Broadcast message</li>
+                                            <li>Force client to logout</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div> <p class="time">Nov. 2015</p>
+                    <div class="staticClass">
+                        <div id="project_04">
+                            <h3>GoBang Game on ARM Cortex M3</h3>
+                            <i>Team Leader</i><br>
+                            Based on <b>C language</b><br>
+                            
+                            <div id="project_detail_04" class="detailInfoDiv" style="display:block">
+                                <img alt="project4" class="project_img" src="src/project4.png">
+                                <ul class="detailInfo">
+                                    <li>Embedded System Design</li>
+                                    <li>LandTiger V2.0 LPC1768 Development Board</li>
+                                    <li>I/O Programming and CAN Design</li>
+                                    <li>Digital Liquid-Crystal Screen Control</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div> <p class="time">Jan - Jun. 2015</p>
+                    <div class="staticClass">
+                        <div id="project_05">
+                            <h3>Control System of Optical Fiber Taper Machine</h3>
+                            <i>Group Leader</i><br>
+                            Based on <b>C language</b><br>
+                            
+                            <div id="project_detail_05" class="detailInfoDiv" style="display:block">
+                                <img alt="project5" class="project_img" src="src/project5.png">
+                                <ul class="detailInfo">
+                                    <li>Hardware Timer and Software Timer Control</li>
+                                    <li>Multiple Step Motor Control</li>
+                                    <li>Tapered Fiber</li>
+                                    <li>Embedded System</li>
+                                    <li>Arc Heat System</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="working_experience">
+                <h2> LEADING AND WORKING</h2>
+                
+                <div> <p class="time">Sep. 2016</p>
+                    <div class="staticClass">
+                        <div id="project_51">
+                            <h3>UB Dining and Shopping Center</h3>
+                            <i>Bakery</i><br>
+                            <div id="project_detail_51" class="detailInfoDiv" style="display:block">
+                                <ul class="detailInfo">
+                                    <li>Fast Pace Working</li>
+                                    <li>Fast Learning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div> <p class="time">Jan. 2016</p>
+                    <div class="staticClass">
+                        <div id="project_52">
+                            <h3>B Engineering Project Management Training</h3>
+                            <i>Excelent Membership</i><br>
+                            <div id="project_detail_52" class="detailInfoDiv" style="display:block">
+                                <ul class="detailInfo">
+                                    <li>Industrail Management Skills</li>
+                                    <li>Decompose Large Veriaties of Information</li>
+                                    <li>Critical Thinking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div> <p class="time">Aug. 2014</p>
+                    <div class="staticClass">
+                        <div id="project_53">
+                            <h3>Sociological Research in The U.S.A.</h3>
+                            <i>Team Leader</i><br>
+                            <div id="project_detail_53" class="detailInfoDiv" style="display:block">
+                                <ul class="detailInfo">
+                                    <li>Better Understanding about American Culture</li>
+                                    <li>Communication With People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div> <p class="time">Nov. 2013</p>
+                    <div class="staticClass">
+                        <div id="project_54">
+                            <h3>A Small Holographic Imaging Device</h3>
+                            <i>Group Leader</i><br>
+                            <div id="project_detail_54" class="detailInfoDiv" style="display:block">
+                                <ul class="detailInfo">
+                                    <li>Making Chemical Resolusion</li>
+                                    <li>Critical Experiment Condition Control</li>
+                                    <li>Precise Lab Operation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div> <p class="time">Nov. 2013</p>
+                    <div class="staticClass">
+                        <div id="project_55">
+                            <h3>English Club</h3>
+                            <i>President</i><br>
+                            <div id="project_detail_55" class="detailInfoDiv" style="display:block">
+                                <ul class="detailInfo">
+                                    <li>Time Management</li>
+                                    <li>Competition Organization</li>
+                                    <li>Management of Human Resource</li>
+                                    <li>Coordinate with Departments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="resume_content_r float_l content_background">
+            <div class="education">
+                <h2>EDUCATION</h2>
+                <p><span class="time">2015 -  Present</span>
+                <h3><a href="http://www.buffalo.edu/">State University of New York at Buffalo</a> </h3>
+                <i>Electrical Engineering</i><br>
+                GPA:3.75/4.0</p>
+                
+                <p><span class="time">2011 - 2015</span>
+                <h3><a href="http://en.hitwh.edu.cn/">Harbin Institute of Technology at Weihai</a></h3>
+                <span style="font-size:larger">Bachelor of Engineering</span><br>
+                <i>Optical Information Science and Technology</i><br>
+                GPA:3.2/4.0</p>
+            </div>
+            <div class="skill">
+                <h2>SKILL</h2>
+                <table class="skill_table">
+                    <tbody>
+                        <tr>
+                            <td class="skill_table_l">C/C++&nbsp;</td>
+                            <td class="skill_table_r table_r_0">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="skill_table_l">JAVA&nbsp;</td>
+                            <td class="skill_table_r table_r_1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="skill_table_l">HTML(5)&nbsp;</td>
+                            <td class="skill_table_r table_r_2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="skill_table_l">CSS(3)&nbsp;</td>
+                            <td class="skill_table_r table_r_3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="skill_table_l">JAVA Script&nbsp;</td>
+                            <td class="skill_table_r table_r_4">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="award">
+                <h2>AWARD</h2>
+                <div class="award_year float_l">
+                    <p>2014</p>
+                </div>
+                <div class="award_detail float_l">
+                    <p>
+                    <h3>Mathematical Contest in Modeling</h3>
+                    Honorable Mention
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="about_me">
+                <h2>About Me</h2>
+                <p>
+                I’m Yuxin,<br />
+                From China<br />
+                Will Graduate in Winter 2016 from UB <br>
+                I have a great interest in coding and game design. 
+                I love to learn new things by solving novel problem in front of the challenges. 
+                Team work is my favorite. I really eager to fall in love with and contribute to my team.
+                </p>
+                
+                <h2>Contact</h2>
+                <p>
+                Tel: (1)716-907-5675<br />
+                E-mail: <a href="mailto:taylorzhangyx@yahoo.com?Subject=Mail From WebSite Visiter" target="_top">Taylorzhangyx@yahoo.com</a><br />
+                Webpage: <a href="http://www.acsu.buffalo.edu/~zhang25">www.acsu.buffalo.edu/~zhang25</a> <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/yuxin-zhang-5248b7b5">My Profile</a><br>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

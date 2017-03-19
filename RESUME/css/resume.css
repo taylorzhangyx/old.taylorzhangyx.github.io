@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color:#5E7769;
+    font-family:Raleway;
+    font-size: 90%;
+    color: hsla(153,8%,26%,1.00);
+}
+.header{
+    height: 110px;
+}
+.resume{
+    margin:auto;
+    position:relative;
+    height: 1500px;
+    box-shadow: -20px 20px 150px hsla(0,0%,14%,0.78);
+    border-radius:3px;
+}
+.navigation{
+    position:absolute;
+    top:-35px;
+    left:2px;
+    box-shadow:-5px 5px 20px #625C4C;
+}
+.navigation_ul{
+    border-radius:5px;
+    background-color:#948c75;
+    padding:0 20px;
+}
+.navigation_ul li{
+    float:left;
+    display: inline-block;
+    padding: 8px 17px;
+    color: hsla(0,0%,100%,1.00);
+    font-family: Aller, "Aller Display", "Aller Light";
+    font-weight:bold;
+}
+.navigation_ul li:hover{
+    background-color:#837b66;
+}
+
+.name{
+    text-align:center;
+    padding: 60px 0 0;
+    font-family: "Raleway Light";
+    letter-spacing: 0.2em;
+}
+.name h1{
+    display: inline-block;
+    padding: 13px 85px;
+    margin: 0 auto;
+    border:solid 1px hsla(150,8%,20%,1.00);
+    color: hsla(150,9%,18%,1.00);
+    font-size: 1.9em;
+    box-shadow: 0 0 6px hsla(180,10%,40%,0.80);
+    text-shadow: 0 0 1px hsla(155,10%,24%,0.89) ;
+    background-color:#ADBFB5;
+}
+.head{
+    margin: 15px 0;
+    padding: 15px;
+    text-align:center;
+}
+
+.head img{
+    margin: 0 auto;
+}
+.resume_content_l{
+    display:inline-block;
+    width: 418px;
+    border-right: solid 2px  hsla(152,8%,47%,1.00);
+    text-align:right;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.resume_content_r{
+    display:inline-block;
+    width: 420px;
+    text-align:left;
+    padding-left:30px;
+}
+h2{
+    font-size: 1.5em;
+    margin: 30px 0 10px;
+    letter-spacing: 0.15em;
+    text-shadow: 1px 1px 1px hsla(0,0%,0%,0.66);
+}
+p{
+    margin: 7px 0;
+    line-height: 1.3em;
+}
+
+.resume_content_header{
+    height: 15px;
+}
+
+.bottomLine{
+    height:90px;
+}
+
+.time{
+    margin: 20px 0 5px 0;
+}
+h3{
+    font-size:1.1em;
+    padding-bottom: 3px;
+}
+.skill_table{
+    width:auto;
+    height:auto;
+}
+.skill_table_l{
+    width: 110px;
+    height: 1.8em;
+    vertical-align:middle;
+}
+.skill_table_r{
+    width: 200px;
+}
+.table_r_0{
+    background:url(../src/table_bar_0.png);
+}
+.table_r_1{
+    background:url(../src/table_bar_1.png);
+}
+.table_r_2{
+    background:url(../src/table_bar_2.png);
+}
+.table_r_3{
+    background:url(../src/table_bar_3.png);
+}
+.table_r_4{
+    background:url(../src/table_bar_4.png);
+}
+.table_r_0, .table_r_1, .table_r_2, .table_r_3, .table_r_4, .table_r_5{
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.award{
+    display:inline-block;
+}
+
+.award_year{
+    width: 60px;
+}
+
+.award_detail{
+    border-left:solid 1px hsla(153,7%,50%,1.00);
+    padding: 0 0 0 25px;
+}
+
+.about_me{
+    width: 335px;
+    
+}
+
+.footer{
+    height:100px;
+}
+
+.detailInfoDiv{
+    position:absolute;
+    text-align: left;
+    width: 340px;
+    padding:15px 15px 25px 15px;
+    margin: 0 100px;
+    background: #BFCDC5;
+    box-shadow: -5px 5px 30px hsla(146,12%,55%,0.81);
+    display: none;
+    opacity: 0;
+}
+
+.projectDetailExtend:hover{
+    cursor: pointer;
+}
+
+

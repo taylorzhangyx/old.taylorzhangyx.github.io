@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Yuxin Zhang's Personal Site">
+<meta name="keywords" content="resume, Yuxin Zhang, software engineer, internship, game developing">
+<meta name="author" content="Yuxin Zhang">
+<meta name="author" content="Taylor Zhang">
+<title>Yuxin Zhang -- KEEP LEARNING AND ENJOY CODING</title>
+<link href="main/CSS/HTMLReset.css" rel="stylesheet" type="text/css" />
+<link href="main/CSS/Global.css" rel="stylesheet" type="text/css" />
+<link href="main/CSS/MainPage1080p.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="JS/move.js"></script>
+
+<script>
+window.onload = function(){
+    
+    var nameTag = document.getElementById("name");
+    var jobTag = document.getElementById("job");
+    var resumeButton = document.getElementById("resume");
+    
+    nameTag.onmouseover = function(){
+        
+        jobTag.style.display = "block";
+        startMove(nameTag, {marginTop : 180});
+        startMove(jobTag, {opacity: 80}, function(){
+            
+            nameTag.onmouseover = function(){};
+            
+            });
+        
+    }
+    
+    jobTag.onmouseover = function(){
+        nameTag.onmouseover = function(){};
+        resumeButton.style.display = "block";
+        startMove(nameTag, {marginTop : 40});
+        startMove(jobTag, {marginTop: 40});
+        startMove(resumeButton, {opacity: 90}, function(){
+            
+            jobTag.onmouseover = function(){};
+            
+            });
+    }
+}
+
+function jumpToResume (){
+    window.open("RESUME/RESUME.html");
+}
+</script>
+
+
+</head>
+
+<body>
+
+<!--Page Content Start-->
+<div class = "container width_main" >
+    <!--background-->
+    <div class="selfPicture float_l"></div>
+    <div class="importantInfo float_l ">
+        <div id="name" class="importantInfo_name">
+        <p>I'm <br /> <b style=" font-size:2em">Yuxin Zhang</b> <br  />
+        A graduate student in University at Buffalo. <br /></p>
+        </div>
+        <div id="job" class="importantInfo_job" >
+        <p>Looking for <br /> 
+        an <b>Intership</b> or <b>Full-time</b> Job <br />
+        As <b>Software Engineer</b> <br />
+        In <b>Game Developing</b> <br /> 
+        On Spring 2017.</p>
+        </div>
+        
+        <div id="resume" class="button_myresume">
+            <p>
+            This is My<br />
+            
+            <input class="resume_button" type="button" onclick="jumpToResume()" />
+            </p>
+        </div>
+    </div> 
+    <!--the key info that display in front of the reader at first time-->
+    
+    
+    <div class="resume">
+        <div class="personalInfo">
+        <!--name tel mail email country-->
+        </div>
+        <div class="education">
+        <!-- undergraduate graduate-->
+        </div>
+        <div class="codingExperience"></div>
+    </div>
+</div>
+<!--Page Content End-->
+<!--Page Footer Start-->
+<div class="footer width_main">
+
+</div>
+<!--Page Footer End-->
+
+
+</body>
+</html>
