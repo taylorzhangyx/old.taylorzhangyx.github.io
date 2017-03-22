@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+.village{
+    margin: auto;
+    background:url(../image/village/ground.png);
+}
+
+.village_width{
+    width: 1088px;
+}
+
+.village_name{
+    margin:auto;
+    height: 190px;
+    text-align: center;
+}
+
+.image_village_name{
+    display: inline-block;
+}
+
+.village_map{
+    margin: auto;
+    position:relative;
+    width: 1088px;
+    height: 512px;
+    background:url(../image/village/village_map.png);
+}

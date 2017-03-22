@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.body{
+    background: hsla(145,63%,42%,1.00);
+    align-content:center;
+}
+
+.world_map{
+}
+
+.clickable{
+    cursor:pointer;
+}
+
+a {
+    target: "_blank";
+}

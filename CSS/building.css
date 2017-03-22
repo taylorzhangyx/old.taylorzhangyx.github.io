@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.build_resume{
+    position: absolute;
+    left: 512px;
+    top: 64px;
+}
+
+.build_project{
+    position: absolute;
+    left: 350px;
+    top: 305px;
+}
+
+.build_game{
+    position: absolute;
+    left: 690px;
+    top: 245px;
+}
