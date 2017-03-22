@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Yuxin Zhang's resume">
+<meta name="keywords" content="resume, Yuxin Zhang, software engineer, internship, game developing">
+<meta name="author" content="Yuxin Zhang">
+<meta name="author" content="Taylor Zhang">
+<title>PROJECT - Yuxin Zhang - KEEP LEARNING AND ENJOY CODING</title>
+<link href="../main/CSS/Global.css" rel="stylesheet" type="text/css">
+<link href="../main/CSS/HTMLReset.css" rel="stylesheet" type="text/css">
+<link href="CSS/project.css" rel="stylesheet" type="text/css">
+<script src="../JS/move.js"></script>
+<script>
+window.onscroll = function(){
+    var navigationBar = document.getElementById("navigation");
+    if(window.pageYOffset > 300){
+        navigationBar.style.top = window.pageYOffset - 270 +"px";
+    }
+    if(window.pageYOffset < 300){
+        navigationBar.style.top = 0 +"px";
+    }
+}
+
+</script>
+</head>
+
+<body>
+
+<div class="widthUni">
+    <img alt="hearder" src="src/header.jpg" style="box-shadow:none">
+    <h1>PROJECT</h1>
+</div>
+
+<div class="container content_background widthUni">
+    
+    <div id="navigation" class="navigation" >
+        <ul>
+            <a href="../index.html"><li>HOME</li></a>
+            <a href="../RESUME/RESUME.html"><li>RESUME</li></a>
+            <a href="project.html"><li>PROJECT</li></a>
+                <ul class="subMenu">
+                    <a href="#project01"><li>Master Labyrinth</li></a>
+                    <a href="#project02"><li>Routing Algorithm</li></a>
+                    <a href="#project03"><li>Chatting APP</li></a>
+                    <a href="#project04"><li>GoBang</li></a>
+                    <a href="#project05"><li>OF Taper Machine</li></a>
+                </ul>
+            
+            <a href="../messageboard/messageboard.html"><li>MESSAGE BOARD</li></a>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="project01">
+            <h2 id="project01">Game Master Labyrinth</h2>
+            <div class="titleLine"></div>
+            <div class="time">Mar. - May 2016</div>
+            <ul class="subTitle">
+                <li>GUI Design</li>
+                <li>Data structure use</li>
+                <li>Algorithm for Random Tile Initialization
+                    <ul class="detailInfoSub">
+                        <li>Array</li>
+                        <li>ArrayList</li>
+                        <li>HashTable</li>
+                        <li>BST</li>
+                        <li>Stack</li>
+                        <li>Queue</li>
+                    </ul>
+                </li>
+                <li>Deadline driven teamwork coding</li>
+                <li>Programming communication skills</li>
+            </ul>
+            <div>
+                <h3>Funtionality and Instruction</h3>
+                <p>This game is a traditional labyrinth game played with 2 or more people. The following is instructions for this game for your better understanding.</p>
+                <p>Our goal is to colon this game on computer, which requires both quality and clear interface and functional and enjoyable inner logic.</p>
+                <img alt="prject1_01" src="src/1.PNG">
+                <p>At first the game starts on a random game board. All tiles, except those 16 fixed one, are randomly placed on the board. Each type of tile follows certain number. </p>
+                <p>Tokens are also placed randomly on the center area. Every token is unique.</p>
+                <p>Players are placed on the fixed born spots. </p>
+                <p>The first player can rotate the tile clockwise and counterclockwise and then use pointer to insert the tile.</p>
+                <img alt="prject1_02" src="src/2.PNG">
+                <p>Then after the insertion, all the tiles and token on that row or column are pushed one step. The very last tile of that row or column was pushed out as a free tile for next player to rotate and insert.</p>
+                <img alt="prject1_03" src="src/3.PNG">
+                <p>Then player can move their pawn through available path and stop at any available spot after press the STOP button.</p>
+                <img alt="prject1_05" src="src/5.PNG">
+                <p>Next, player 2 just repeat the same rules as player1 to do the rotation, insertion and movement. One exception, the new player can’t insert tile into the spot that this tile was pushed out.</p>
+                <img alt="prject1_10" src="src/10.PNG">
+                <p>For each pawn, they can pick up token by pressing the check button, but only in order. Now the player3(blue) is accessible to token 1. Blue move onto the token 1 and the check button is turning blue from grey. </p>
+                <img alt="prject1_12" src="src/12.PNG">
+                <p>After press the button, the token was picked and the pawn end this turn automatically. Blue earns the value of this pawn, 1 point.</p>
+                <p>Only after all the token was picked, the result will be shown on the board and given the rank for every player.</p>
+            </div>
+            <div>
+                <h3>What I got from this project</h3>
+                <p>1. Programming design is a huge job, not only need to think about the current work, but also need to consider the future structure of this whole work. This project contains 4 layers of design. We started from basic tail and path to build the whole board. Design the pawn data and token data to connect each other and use GUI to display them all. Each layer is connected to others. Without thinking too much, at first we need to add a lot variable in each class to make them connected. However, when we reached the final stage we found out that the old design is not function and we can’t fix it, just because of the complexity of our class and layer connection. We then redesigned a data structure, use layer by layer connection to connect every unit. All things pipe up to build the whole board. Fortunately, the new design works perfect, even better than the other group.</p>
+                <p>2. Team work relays on communication. The better communication, the more efficiency. Communication covers the idea for the work, the inspiration for the problem and job assignment. Bad communication would result job overlapping, misunderstanding and even dissolution of the whole group. Clarification of the common work and the point that we want to reach together is important. Leader is also important in team discussion, who absorbs teammate’ ideas and avoiding wondering off the point. </p>
+                <p>3. Self-learning is also another important topic in this project. All the topic in this project are brand new to us. We need to use online resources, like search engine and online tutorial to find the resource we need. This is the key point of technician, learning things and use things immediately. I really enjoy this experience, this feeling. I’m proud of making new things.  </p>
+            </div>
+        </div>
+        <div class="project02">
+            <h2 id="project02">Network Layer Routing Algorithm Implementation </h2>
+            <div class="titleLine"></div>
+            <div class="time">May 2016</div>
+            <ul class="subTitle">
+                <li>Establish Forwarding Table</li>
+                <li>TCP UDP communication</li>
+                <li>Command control</li>
+                <li>Periodically Data Update Based on Software Timing</li>
+            </ul>
+            <div>
+                <img class="image" alt="Routing Algorithm" src="src/project2.png">
+                <p>In this project, we initial more than 5 routers to establish a virtual network. Every router has a unique forwarding table and a value that represents the distance to its neighbor. The project goal is to write an algorithm for router to find the shortest path to every other router. </p>
+                <h3>Function description</h3>
+                <ol>
+                	<li>Router need to send latest routing table to neighborhood to update their table</li>
+                	<li>Router need to accept and analysis incoming routing table to get the distance to every other router</li>
+                	<li>Router is able to receive incoming command and decompose attached data to response relevantly, for example: initialization, value update, disconnect to certain neighbor, and crush.</li>
+                	<li>Router is able to identify crushed path and find another route</li>
+                	<li>Router is able to forwarding file based on current routing table through TCP</li>
+                </ol>
+            </div>
+            <div>
+                <h3>What I got from this project</h3>
+                <p>Dynamic network design requires a strong structure design. It not only requires establishing a solid base at first time, but also requires updating the whole structure when new data come in. the performance reflects in the speed of that reflection and the resource that this reflection and change cost. Good algorithm cost less and works quicker. Structure matters.</p>
+            </div>
+        </div>
+        <div class="project03">
+            <h2 id="project03">A Functional Chatting APP</h2>
+            <div class="titleLine"></div>
+            <div class="time">Mar. 2016</div>
+            <ul class="subTitle">
+                <li>Application layer designe</li>
+                <li>TCP connection</li>
+                <li>Client APP functionality
+                    <ul class="detailInfoSub">
+                        <li>Login to the server</li>
+                        <li>Send message to another client</li>
+                        <li>Send files to another client</li>
+                        <li>Fetch the statistics from the server</li>
+                        <li>Hide them self from the other client</li>
+                        <li>Logout from the server</li>
+                    </ul>
+                </li>
+                <li>Server APP functionality
+                    <ul class="detailInfoSub">
+                        <li>Accept login request from clients</li>
+                        <li>Pass message from one client to another one</li>
+                        <li>Gather data, such as IP, port number, username, message they sent and the number of messages</li>
+                        <li>Refresh data when client login or logout</li>
+                        <li>Mute clients</li>
+                        <li>Broadcast message</li>
+                        <li>Force client to logout</li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                <img class="image" alt="Chatting APP" src="src/project3.png">
+            </div>
+            <div>
+                <h3>What I got from this project</h3>
+                <p>The structure of Online chatting system and security thinking.</p>
+                <p>The first time touching chatting application. This big system bases on a strong server with various client terminal. All clients connect to serve so they can connect to each other indirectly, which means once the server crush, no one would work. A robust and efficient server design is the key to online chatting system. </p>
+                <p>What’s more, the server controls all the data that pass through it. All the clients are naked from the server’s perspective. Think deeper, the security of chatting system mainly means the security for the server. </p>
+                <p>In information age, security means a lot.</p>
+            </div>
+        </div>
+        <div class="project04">
+            <h2 id="project04">GoBang on ARM Cortex M3</h2>
+            <div class="titleLine"></div>
+            <div class="time">Mar. 2016</div>
+            <ul class="subTitle">
+                <li>Embedded system design</li>
+                <li>LandTiger V2.0 LPC1768 Development Board</li>
+                <li>I/O programming and CAN design</li>
+                <li>Digital Liquid-Crystal Screen Control</li>
+            </ul>
+            <div>
+                <p>More details are in our project report</p>
+                <div style=" padding:0 30px">
+                    <a href="src/GoBangProject.pdf"><img alt="GoBang Report" src="src/GoBangProject.PNG"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project05">
+            <h2 id="project05">Control System of Optical Fiber Taper Machine</h2>
+            <div class="titleLine"></div>
+            <div class="time">Mar. 2016</div>   
+            <ul class="subTitle">
+                <li>Embedded System</li>
+                <li>Hardware Timer and Software Timer Control</li>
+                <li>Multiple Step Motor Control</li>
+                <li>Tapered Fiber</li>
+                <li>Arc Heat System</li>
+            </ul>
+            <div>
+                <img class="image" alt="OPTICAL FIBER TAPER MACHINE" src="src/project5.png">
+                <p>Tapered fibers are indispensable part of FOS(Fiber Optic Sensor). This machine utilizes Step Motors and Arc Heat System to process Optical Fiber. Using different input parameter, this system can produce fine tapered fiber with different radius and length.</p>
+                <p>This is my report about this system(IN CHINESE): <a href="src/Tapered Optical Fiber Machine Report.pdf">Click Here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+
+</body>
+</html>
