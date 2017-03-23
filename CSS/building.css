@@ -39,4 +39,24 @@
 
 .build_tag{
 }
-
+@media screen and (max-width: 960px) {
+    .building{
+        max-width:300px;
+        margin:auto;
+        text-align:center;
+    }
+    .build_tag{
+    }
+    .building_container{
+        clear: both;
+        float: left;
+        margin:auto;
+    }
+    
+    [class*="build"] {
+        left:0px;
+        top: 0px;
+        display: inline-block;
+        position: static;
+    }
+}

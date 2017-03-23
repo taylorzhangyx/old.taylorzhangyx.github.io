@@ -7,3 +7,9 @@
     left: 504px;
     z-index: 2;
 }
+@media screen and (max-width: 960px) {
+    .character{
+        position: static;
+    }
+    
+}

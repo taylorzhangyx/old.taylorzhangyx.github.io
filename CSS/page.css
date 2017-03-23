@@ -24,7 +24,8 @@
 }
 
 .contact{
-    position: absolute;
+    float:left;
+    padding: 5px 5px 5px 5px;
 }
 
 .contact:hover{
@@ -33,22 +34,52 @@
     transform: scale(1.2,1.2); /* Standard syntax */
 }
 
-.github{
+.contact_container{
+    position: absolute;
     top: 420px;
-    left: 695px;
+    left: 631px;
+}
+
+.github{
+    top: 0px;
+    left: 0px;
 }
 
 .linkedin{
-    top: 420px;
-    left: 765px;
+    top: 0px;
+    left: 70px;
 }
 
 .facebook{
-    top: 420px;
-    left: 835px;
+    top: 0px;
+    left: 140px;
 }
 
 a {
     target: "_blank";
     cursor: url(../image/cursor/click.png), auto;
 }
+
+@media screen and (max-width: 960px) {
+    audio {
+        display: none;
+    }
+    
+    .body{
+        background: url(../image/village/ground.png);
+    }
+    
+    .instruction{
+        float:left;
+        left:auto;
+        top:auto;
+        margin:auto;
+        z-index:0;
+        position:static;
+    }
+    .contact_container{
+        display: block;
+        position: static;
+    }
+}
+
