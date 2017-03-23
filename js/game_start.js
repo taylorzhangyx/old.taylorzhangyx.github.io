@@ -111,7 +111,9 @@ function reaction(newpos){
     var maxleft = village_pos.left;
     var maxright = village_pos.left + 1024;
     
-    if(left <= maxleft || top <= maxtop || left >= maxright || top >= maxbottom) {return true;}
+    if(left <= maxleft || top <= maxtop || left >= maxright || top >= maxbottom) {
+        return true;
+    }
     if(building.react(newpos)) return true;
     else{
         return false;

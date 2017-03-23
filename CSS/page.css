@@ -3,15 +3,52 @@
 .body{
     background: hsla(145,63%,42%,1.00);
     align-content:center;
+    cursor: url(../image/cursor/cursor.png), auto;
 }
 
 .world_map{
 }
 
 .clickable{
-    cursor:pointer;
+    cursor: url(../image/cursor/click.png), auto;
+}
+
+.instruction{
+    position: absolute;
+    top: 100px;
+    left: 270px;
+    z-index: 3;
+}
+
+.instruction_img{
+}
+
+.contact{
+    position: absolute;
+}
+
+.contact:hover{
+    -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2); /* Standard syntax */
+}
+
+.github{
+    top: 420px;
+    left: 695px;
+}
+
+.linkedin{
+    top: 420px;
+    left: 765px;
+}
+
+.facebook{
+    top: 420px;
+    left: 835px;
 }
 
 a {
     target: "_blank";
+    cursor: url(../image/cursor/click.png), auto;
 }

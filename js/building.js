@@ -13,7 +13,14 @@ var building = {
         this.b_list[2] = $("#build_game");
         this.b_link[2] = "https://taylorzhangyx.github.io/Leetcodes/";
         
+        this.b_list[3] = $("#linkedin");
+        this.b_link[3] = "https://www.linkedin.com/in/yuxin-zhang-5248b7b5";
         
+        this.b_list[4] = $("#facebook");
+        this.b_link[4] = "https://www.facebook.com/yuxin.zhang.9406";
+        
+        this.b_list[5] = $("#github");
+        this.b_link[5] = "https://github.com/taylorzhangyx";
     },
     
     react: function(pos){
