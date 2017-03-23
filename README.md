@@ -4,6 +4,7 @@ personal web site
 Design and plan: Functionalities
 
 world map:
+
 	1. bgm(with initial volume)//Mar.22.2017.DONE
 
 character:
@@ -29,6 +30,7 @@ waitlist:
 	2. indoor page
 
 contact:
+
 	1. linkedin, facebook, github link//Mar.22.2017.DONE
 	2. animations for each icon//Mar.22.2017.DONE
 	
